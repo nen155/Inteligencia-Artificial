@@ -1,0 +1,36 @@
+
+
+/*
+int Player::miniMax(Environment estado, bool* aplicables, int niveles, int jugador_)
+{
+                double valorAux;
+                vector<int> mejoresMovimientos;
+                double eleccion=menosinf;
+                Environment estad= estado;
+                //Obtenemos todos los arboles resultados de aplicar cada uno de
+                //los movimientos posibles para un estado
+                for(int i=0;i<8;++i){
+                        if(aplicables[i]){
+                            valorAux = Poda_AlfaBeta(estad,jugador_,niveles,menosinf,masinf);
+                            estad = estado.GenerateNextMove(i);
+                            if(valorAux == eleccion) {
+
+                                        mejoresMovimientos.push_back(i);
+                            } else
+                                    if(valorAux > eleccion) {
+                                            mejoresMovimientos.clear();
+                                            mejoresMovimientos.push_back(i);
+                                            eleccion = valorAux;
+
+                            }
+                        }
+                }
+
+                int indice = getIndiceAleatorio(mejoresMovimientos.size());
+                return mejoresMovimientos[indice];
+}
+
+int Player::getIndiceAleatorio(int tam) {
+        return rand()%tam;
+}
+*/
